@@ -5,7 +5,7 @@ entity Books {
       title           : String;
       stock           : Integer;
       quality         : Association to Qualities
-                          on quality.quality = quality.quality;
+                          on quality.quality = quality_quality;
       quality_quality : type of Qualities : quality;
 }
 
